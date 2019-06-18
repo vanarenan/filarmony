@@ -43,7 +43,7 @@ class HeaderComponent extends React.Component<WithStyles<typeof styles> | any, a
             <Link to="/"><img src={logo} alt="logo"/></Link>
             <Link to="/events">Заходи</Link>
             <Link to="/places">Споруди</Link>
-            <Link to="/imps">Імпресаріо</Link>
+            <Link to="/impresarios">Імпресаріо</Link>
             <Link to="/actors">Актори</Link>
             <Button onClick={this.logout}> <Person /> ВИХІД </Button>
           </Toolbar>

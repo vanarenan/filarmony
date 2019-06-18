@@ -1,17 +1,20 @@
-export enum Genre {
-  'Пісня', 
-  'Музика', 
-  'Танець',
-  'Ляльки',
-  'Комедія',
-  'Постанова',
-  'Монолог',
-}; 
+import _ from 'lodash';
 
-export interface Actor {
+export interface Event {
+  id: string;
+  date: string;
+  name: string;
+  desc: string;
+  placeId: string;
+  impresarioId: string;
+  actorsId: string[];
+};
+
+export interface Place {
   id: string;
   name: string;
-  genres: Genre[];
+  desc: string;
+  seats: number;
 };
 
 export interface Impresario {
@@ -20,17 +23,20 @@ export interface Impresario {
   genres: Genre[];
 };
 
-export interface Places {
+export interface Actor {
   id: string;
   name: string;
-  seats: number;
+  genres: Genre[];
 };
 
-export interface Events {
-  id: string;
-  date: Date;
-  name: string;
-  description: string;
-  impresarioId: string;
-  actorsId: string[];
-};
+export enum Genre {
+  'Пісня', 
+  'Музика', 
+  'Танець',
+  'Ляльки',
+  'Комедія',
+  'Постанова',
+  'Монолог'
+}
+
+export const Genres = _.filter(Genre, (value) => !isNaN(Number(value)) === false);

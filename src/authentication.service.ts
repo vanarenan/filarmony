@@ -1,6 +1,4 @@
 import { BehaviorSubject } from 'rxjs';
-import axios from 'axios';
-import qs from 'query-string';
 
 const currentUserSubject = new BehaviorSubject(localStorage.getItem('currentUser'));
 
