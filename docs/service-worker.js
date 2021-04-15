@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/filarmony/precache-manifest.4154eddf1e388956173d8c6bfb15ab54.js"
+  "https://vanarenan.github.io/filarmony/precache-manifest.1e0e76479622a4aee32a490483db3180.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/filarmony/index.html", {
+workbox.routing.registerNavigationRoute("https://vanarenan.github.io/filarmony/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
